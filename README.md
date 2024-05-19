@@ -1,4 +1,6 @@
-# HomeSecure: Multi Modal Deep CNN w/ Feature Extraction for Gesture Recognition 
+# Multi Modal Deep CNN w/ Feature Extraction for Gesture Recognition 
+
+Data: https://drive.google.com/drive/folders/1Xs9Re6tVkx6sLczYPWzHU355RjT9M7zm
 
 ## Overview
 
