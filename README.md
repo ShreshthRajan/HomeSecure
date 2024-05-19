@@ -1,4 +1,4 @@
-# HomeSecure: Testing a layering large language models with high dimensional feature data against regular GPT4 multi-modality
+# HomeSecure: Multi Modal Deep CNN w/ Feature Extraction for Gesture Recognition 
 
 ## Overview
 
