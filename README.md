@@ -2,7 +2,7 @@
 
 ## Overview
 
-Designed to enhance the analysis of security footage. Leveraging deep CNNs for object detection, feature extraction, and multi-modal integration, improvement in comprehension and interaction with video content. This project integrates YOLO for object detection, SIFT for detailed feature extraction, and a custom deep CNN for object recognition. Employs GPT-4’s multi-modal capabilities for comprehensive question answering about the video content. The goal is to assess the viability of layering large language models with high dimensional extracted features against regular GPT4 multi modal capability. 
+Designed to enhance the analysis of security footage. Leveraging deep CNNs for object detection, feature extraction, and multi-modal integration, I aim to find improvement in comprehension and interaction with video content. This project integrates YOLO for object detection, SIFT for detailed feature extraction, and a custom deep CNN for object recognition. Employs GPT-4’s multi-modal capabilities for comprehensive question answering about the video content. The goal is to assess the viability of layering large language models with high dimensional extracted features against regular GPT4 multi modal capability. 
 
 ## Key Components
 
@@ -16,7 +16,7 @@ YOLO for real-time object compression. processes each frame of the input video t
 
 ### 2. Deep Convolutional Neural Network (CNN) for Object Recognition
 
-deep CNN is trained using the labeled frames from the YOLO output. The CNN is architected to optimize object recognition accuracy. The training process includes:
+deep CNN is trained using the labeled frames from the YOLO output. The CNN is architected to optimize object recognition accuracy. 
 
 - **Data Curation:** Organized the detected objects and corresponding frames into training and validation datasets.
 - **Model Architecture:** Defined a deep CNN structure optimized for feature extraction and classification.
@@ -24,7 +24,7 @@ deep CNN is trained using the labeled frames from the YOLO output. The CNN is ar
 
 ### 3. SIFT for lower-level Feature Extraction
 
-SIFT extracts invariant features from the frames. This method captures descriptors about textures and patterns, regardless of scale and rotation. The goal of this layer is capture data not found in the CNN. The process includes:
+SIFT extracts invariant features from the frames. This method captures descriptors about textures and patterns, regardless of scale and rotation. The goal of this layer is capture data not found in the CNN. 
 
 - **Key Point Detection:** Identifying distinctive locations within each frame.
 - **Descriptor Calculation:** Computing the local image gradients around each key point to generate a descriptor vector.
@@ -32,17 +32,17 @@ SIFT extracts invariant features from the frames. This method captures descripto
 
 ### 4. Multi-Modal Integration with GPT-4
 
-The multi-modal integration leverages both CNN and SIFT features to provide a comprehensive representation of each frame. GPT-4 processes these features for advanced question answering. This integration involves:
+Multi-modal integration uses high dimensional output from the prevoius layers to provide a comprehensive representation of each frame. Additional modality includes a layer of raw video data in future iterations. GPT-4 processes these features for advanced question answering. 
 
 - **Feature Fusion:** Combining high-level CNN features with SIFT descriptors into a unified representation.
-- **GPT-4 Processing:** Utilizing GPT-4’s multi-modal capabilities to interpret the fused features.
+- **GPT-4 Processing:** Utilizing GPT-4’s multi-modal capabilities to interpret the fused features. 
 - **Question Answering:** Enabling sophisticated querying of the video content, including object identification, interaction understanding, and event recognition.
 
 ## Implementation
 
 ### Backend (`app.py`)
 
-The backend is implemented using Flask to handle video uploads and processing. Core functionalities include:
+The backend is implemented using Flask to handle video uploads and processing. 
 
 - **Video Upload Endpoint:** Accepts video files from users.
 - **Frame Extraction:** Decomposes videos into individual frames for processing.
@@ -52,7 +52,7 @@ The backend is implemented using Flask to handle video uploads and processing. C
 
 ### Frontend (`index.html`, `app.js`, `style.css`)
 
-The frontend is designed to provide an interactive interface for video upload and querying. Key components include:
+The frontend is designed to provide an interactive interface for video upload and querying. 
 
 - **Upload Interface:** Facilitates user video uploads.
 - **Chatbot Interface:** Allows users to interact with the system via a conversational agent.
