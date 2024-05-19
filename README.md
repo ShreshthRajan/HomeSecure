@@ -22,9 +22,9 @@ deep CNN is trained using the labeled frames from the YOLO output. The CNN is ar
 - **Model Architecture:** Defined a deep CNN structure optimized for feature extraction and classification.
 - **Feature Extraction:** Producing high-dimensional feature maps that encapsulate object characteristics.
 
-### 3. Scale-Invariant Feature Transform (SIFT) for Detailed Feature Extraction
+### 3. SIFT for lower-level Feature Extraction
 
-SIFT extracts invariant features from the frames. This method captures key points and descriptors that provide robust information about textures and patterns, regardless of scale and rotation. The goal of this layer is capture data not found in the CNN. The process includes:
+SIFT extracts invariant features from the frames. This method captures descriptors about textures and patterns, regardless of scale and rotation. The goal of this layer is capture data not found in the CNN. The process includes:
 
 - **Key Point Detection:** Identifying distinctive locations within each frame.
 - **Descriptor Calculation:** Computing the local image gradients around each key point to generate a descriptor vector.
