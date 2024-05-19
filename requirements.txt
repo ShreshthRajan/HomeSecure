@@ -6,9 +6,15 @@ torch==1.13.0
 transformers==4.23.1
 stable-baselines3==1.0
 gym==0.23.0
-opencv-python==4.5.3.56
+opencv-python-headless==4.5.5.64
 requests==2.26.0
 beautifulsoup4==4.10.0
 h5py==3.6.0
 tokenizers==0.13.3
 werkzeug==2.0.1
+pandas==1.4.0
+openai==0.27.0
+numpy==1.23.5
+keras==2.15.0
+Pillow==9.1.0
+scipy==1.9.3

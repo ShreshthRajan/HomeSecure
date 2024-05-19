@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload and Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload Video and Ask Questions</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="video-file" name="file" accept="video/*" required>
+        <button type="submit">Upload Video</button>
+    </form>
+    <div id="upload-status"></div>
+
+    <h2>Chat with the Bot</h2>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type your question here">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
