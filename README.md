@@ -1,4 +1,4 @@
-# HomeSecure: An Advanced Multi-Modal Deep Learning Framework for Video Analysis
+# HomeSecure: Viability of layering large language models with high dimensional feature data against regular GPT4 multi-modality
 
 ## Overview
 
