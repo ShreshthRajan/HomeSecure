@@ -1,14 +1,14 @@
-# HomeSecure: Viability of layering large language models with high dimensional feature data against regular GPT4 multi-modality
+# HomeSecure: Testing a layering large language models with high dimensional feature data against regular GPT4 multi-modality
 
 ## Overview
 
-A deep learning framework designed to enhance the analysis of security footage. Leveraging deep CNNs for object detection, feature extraction, and multi-modal integration, HomeSecure aims to provide a robust solution for understanding and interacting with video content. This project integrates YOLO for object detection, SIFT for detailed feature extraction, and a custom deep CNN for object recognition. Employs GPT-4’s multi-modal capabilities for comprehensive question answering about the video content. The goal is to assess the viability of layering large language models with high dimensional extracted features against regular GPT4 multi modal capability. 
+Designed to enhance the analysis of security footage. Leveraging deep CNNs for object detection, feature extraction, and multi-modal integration, improvement in comprehension and interaction with video content. This project integrates YOLO for object detection, SIFT for detailed feature extraction, and a custom deep CNN for object recognition. Employs GPT-4’s multi-modal capabilities for comprehensive question answering about the video content. The goal is to assess the viability of layering large language models with high dimensional extracted features against regular GPT4 multi modal capability. 
 
 ## Key Components
 
 ### 1. YOLO (You Only Look Once) for Object Detection
 
-YOLO is utilized for real-time object compression. It processes each frame of the input video to identify and label objects. This detection pipeline involves:
+YOLO for real-time object compression. processes each frame of the input video to identify and label objects. This detection pipeline involves:
 
 - **Frame Decomposition:** Sequentially extracting frames from the video stream.
 - **Detection Algorithm:** Applying the YOLO model to each frame to detect objects.
@@ -16,7 +16,7 @@ YOLO is utilized for real-time object compression. It processes each frame of th
 
 ### 2. Deep Convolutional Neural Network (CNN) for Object Recognition
 
-A deep CNN is trained using the labeled frames from the YOLO output. The CNN is architected to optimize object recognition accuracy. The training process includes:
+deep CNN is trained using the labeled frames from the YOLO output. The CNN is architected to optimize object recognition accuracy. The training process includes:
 
 - **Data Curation:** Organized the detected objects and corresponding frames into training and validation datasets.
 - **Model Architecture:** Defined a deep CNN structure optimized for feature extraction and classification.
